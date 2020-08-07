@@ -76,13 +76,6 @@
         </i-header>
         <i-content>
           <div class="content">
-            <Alert type="error">
-              Why is 植物猫 not in the ranking?
-              <span slot="desc">
-                The final decision from SCSPVP is that 植物貓’ is disqualified from the competition thus ranking is cancelled and will not be recorded in this competition (<a href="http://bbs.17173.com/thread-11257834-1-1.html" target="_blank">source</a>)
-              </span>
-            </Alert>
-            
             <Tabs :animated="false" @on-click="handleTabChange">
               <tab-pane label="Ladder" name="ladder" :disabled="loading">
                 <div class="navbar">
@@ -236,7 +229,7 @@
         async fetchAPI(offset, limit) {
           this.loading = true;
           const ladderId =
-            'SCSPVP%E8%BF%B7%E9%9B%BE%E7%8B%BC%E4%BA%BA%E6%9C%8D%E9%82%80%E8%AF%B7%E8%B5%9B+(PL2584)';
+            '%E8%99%8E%E7%89%99%E6%9D%AFS12%E7%8B%BC%E4%BA%BA%E6%8C%91%E6%88%98%E4%BC%97%E7%AD%B9%E8%B5%9B+(PL2663)';
           let apiLink =
             `https://poe.game.qq.com/api/ladders?offset=${offset}&limit=${limit}&id=${ladderId}&type=league&realm=pc`;
           let apiData = await fetch(apiLink)
